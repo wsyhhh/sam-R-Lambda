@@ -11,7 +11,7 @@ zip -r ./lambda-deploy.zip *
 pwd
 ls -ls .
 
-if ./deploy.sh
+if sh deploy.sh
     then 
         exit 0
     else
