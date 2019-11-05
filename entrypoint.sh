@@ -11,13 +11,7 @@ zip -r ./lambda-deploy.zip *
 pwd
 ls -ls .
 
-sam build
-sam package --output-template \
-    packaged.yaml --s3-bucket "$BUCKET_NAME"
-
-if sam deploy --template-file packaged.yaml \
-    --region us-east-1 --capabilities \
-    CAPABILITY_IAM --stack-name "$STACK_NAME"
+if ./deploy.sh
     then 
         exit 0
     else
