@@ -12,7 +12,7 @@ Resources:
   SamRFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://samtestaishu/c4a91462c039e519da2c589611e5420c
+      CodeUri: s3://mylambdacollectionwk7/5a50f3c8b3c4932bc98320d23ed8fbca
       Handler: script.handler
       Runtime: provided
       Layers:
