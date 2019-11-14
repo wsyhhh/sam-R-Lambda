@@ -1,6 +1,7 @@
 #!/bin/bash
 # Steps to install latest SAM CLI
 
+
 echo
 echo "******************************"
 echo "******Install Homebrew********"
